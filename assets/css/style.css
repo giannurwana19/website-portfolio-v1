@@ -56,6 +56,7 @@
 .navbar .navbar-box .menu li a {
   color: var(--text-color-opacity);
   text-decoration: none;
+  font-size: 14px;
 }
 
 .navbar .navbar-box .social {
@@ -73,6 +74,29 @@
   color: var(--text-color);
 }
 
+.hamburger {
+  padding: 0;
+  margin-left: 20px;
+  height: 24px;
+  display: none;
+}
+
+.hamburger .hamburger-box {
+  width: 30px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: var(--text-color);
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: var(--text-color);
+}
+
 .header {
   width: 100%;
   min-height: 100vh;
@@ -81,4 +105,43 @@
   background-image: linear-gradient(#1b1b1b 4px, transparent 4px),
     linear-gradient(to right, #1b1b1b 4px, #1a1a1a 4px);
   background-size: 80px 80px;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-box .menu {
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    gap: 0;
+    background-color: white;
+    width: 80%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.4s ease;
+    opacity: 0;
+  }
+
+  .navbar .navbar-box .menu.menu-active {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  .navbar .navbar-box .menu li {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar .navbar-box .menu li a {
+    color: var(--color-hitam);
+    font-weight: bold;
+  }
+
+  .navbar .navbar-box .social {
+    margin-left: auto;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
