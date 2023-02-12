@@ -271,6 +271,89 @@
   font-weight: 600;
 }
 
+.skills {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: var(--color-hitam);
+}
+
+.skills .title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.skills .title h1 {
+  font-size: 40px;
+  color: var(--text-color);
+}
+
+.skills .title p {
+  color: var(--text-color-opacity);
+}
+
+.skills .skills-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.skills .skills-box .box {
+  background-color: var(--color-putih);
+  padding: 30px 40px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.skills .skills-box .box:hover {
+  transform: translateY(-10px);
+}
+
+.skills .skills-box .box h3 {
+  color: var(--color-hitam);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills .skills-box .box .frontend-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills .skills-box .box .frontend-skills div {
+  padding: 10px 20px;
+  background-color: #ff70a6;
+  border-radius: 100px;
+}
+
+.skills .skills-box .box .backend-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills .skills-box .box .backend-skills div {
+  padding: 10px 20px;
+  background-color: #ff9770;
+  border-radius: 100px;
+}
+
+.skills .skills-box .box .design-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills .skills-box .box .design-skills div {
+  padding: 10px 20px;
+  background-color: #70d6ff;
+  border-radius: 100px;
+}
+
 @media (max-width: 1200px) {
   .header .header-box img {
     width: 150px;
@@ -401,6 +484,12 @@
   .about .about-box .box:nth-child(1) img {
     width: 400px;
   }
+
+  .skills .skills-box .box .frontend-skills div,
+  .skills .skills-box .box .backe-skills div,
+  .skills .skills-box .box .design-skills div {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 476px) {
@@ -442,6 +531,10 @@
   .about .about-box .box .desc {
     font-size: 12px;
   }
+
+  .skills .title h1 {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 376px) {
@@ -454,6 +547,10 @@
   }
 
   .about .title h1 {
+    font-size: 30px;
+  }
+
+  .skills .title h1 {
     font-size: 30px;
   }
 }
