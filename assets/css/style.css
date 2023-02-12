@@ -608,6 +608,44 @@
   margin-left: 5px;
 }
 
+.resume {
+  padding: 150px 0;
+  background-color: var(--color-hitam);
+}
+
+.resume .resume-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 100px;
+}
+
+.resume .resume-box .box img {
+  width: 100%;
+}
+
+.resume .resume-box .box h1 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.resume .resume-box .box p {
+  color: var(--text-color-opacity);
+  margin-bottom: 40px;
+}
+
+.resume .resume-box .box a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 15px 30px;
+  background-color: var(--color-biru);
+}
+
+.resume .resume-box .box a:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 1200px) {
   .header .header-box img {
     width: 150px;
@@ -683,6 +721,10 @@
     text-align: center;
     padding: 0;
   }
+
+  .resume .resume-box .box p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -744,6 +786,20 @@
   .skills .skills-box .box .design-skills div {
     font-size: 12px;
   }
+
+  .resume .resume-box {
+    grid-template-columns: 1fr;
+  }
+
+  .resume .resume-box .box img {
+    width: 300px;
+    display: block;
+    margin-inline: auto;
+  }
+
+  .resume .resume-box .box:nth-child(2) {
+    text-align: center;
+  }
 }
 
 @media (max-width: 476px) {
@@ -800,6 +856,14 @@
 
   .projects .design-projects .design-projects-box .box img {
     height: 220px;
+  }
+
+  .resume .resume-box .box img {
+    width: 250px;
+  }
+
+  .resume .resume-box .box p {
+    font-size: 12px;
   }
 }
 
