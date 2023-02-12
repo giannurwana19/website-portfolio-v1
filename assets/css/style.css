@@ -371,7 +371,7 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.projects .big-projects-box {
+.projects .big-projects {
   margin-bottom: 150px;
 }
 
@@ -444,6 +444,168 @@
 
 .projects .big-projects .big-projects-box .box .detail-projects a:hover {
   opacity: 0.8;
+}
+
+.projects .frontend-projects {
+  margin-bottom: 150px;
+}
+
+.projects .frontend-projects h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects .frontend-projects .frontend-projects-box {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+.projects .frontend-projects .frontend-projects-box .box {
+  width: 320px;
+}
+
+.projects .frontend-projects .frontend-projects-box .box img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.projects .frontend-projects .frontend-projects-box .box h3 {
+  margin-bottom: 5px;
+}
+
+.projects .frontend-projects .frontend-projects-box .box p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.projects .frontend-projects .frontend-projects-box .box .tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.projects .frontend-projects .frontend-projects-box .box .tools button {
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid black;
+}
+
+.projects .frontend-projects .frontend-projects-box .box .detail-projects {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.projects .frontend-projects .frontend-projects-box .box .detail-projects a {
+  text-decoration: none;
+  padding: 5px 20px;
+  color: var(--text-color);
+}
+
+.projects
+  .frontend-projects
+  .frontend-projects-box
+  .box
+  .detail-projects
+  a:nth-child(1) {
+  background-color: #833bec;
+}
+
+.projects
+  .frontend-projects
+  .frontend-projects-box
+  .box
+  .detail-projects
+  a:nth-child(2) {
+  background-color: green;
+}
+
+.projects
+  .frontend-projects
+  .frontend-projects-box
+  .box
+  .detail-projects
+  a:hover {
+  opacity: 0.8;
+}
+
+/* ==== */
+.projects .design-projects {
+  margin-bottom: 150px;
+}
+
+.projects .design-projects h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects .design-projects .design-projects-box {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 30px;
+  justify-content: center;
+}
+
+.projects .design-projects .design-projects-box .box {
+  width: 320px;
+}
+
+.projects .design-projects .design-projects-box .box img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.projects .design-projects .design-projects-box .box h3 {
+  margin-bottom: 5px;
+}
+
+.projects .design-projects .design-projects-box .box p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.projects .design-projects .design-projects-box .box .tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.projects .design-projects .design-projects-box .box .tools button {
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid black;
+}
+
+.projects .design-projects .dribbble {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.projects .design-projects .dribbble a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #ff006e;
+  color: var(--text-color);
+}
+
+.projects .design-projects .dribbble a:hover {
+  opacity: 0.8;
+}
+
+.projects .design-projects .dribbble a i {
+  margin-left: 5px;
 }
 
 @media (max-width: 1200px) {
@@ -629,6 +791,14 @@
   }
 
   .projects .big-projects .big-projects-box .box img {
+    height: 220px;
+  }
+
+  .projects .frontend-projects .frontend-projects-box .box img {
+    height: 220px;
+  }
+
+  .projects .design-projects .design-projects-box .box img {
     height: 220px;
   }
 }
